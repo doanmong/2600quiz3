@@ -9,7 +9,7 @@ PtrToEmployee searchEmployeeByNumber(PtrToConstEmployee ptr, int tableSize, long
     return NULL;
 }
 
-PtrToConstEmployee searchEmployeeByNumber(PtrToConstEmployee ptr, int tableSize, char * targetName) {
+PtrToConstEmployee searchEmployeeByName(PtrToConstEmployee ptr, int tableSize, char * targetName) {
     const PtrToConstEmployee endPtr = ptr + tableSize;
     for(; ptr < endPtr; ptr++) {
         if(strcmp(ptr->name,targetName) == 0)
